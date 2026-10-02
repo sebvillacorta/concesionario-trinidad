@@ -26,3 +26,4 @@ Se escriben en la terminal de VS Code, dentro de la carpeta del proyecto.
 | `BRIEF.md` | El brief del proyecto: qué negocio es, para quién y cómo se verá |
 | `boceto/` | La foto del boceto de la página de inicio |
 | `revisor/` | El revisor que te dice qué falta en tu entrega |
+# concesionario-trinidad
