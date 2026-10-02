@@ -5,32 +5,32 @@ nada de DNI, teléfonos personales ni direcciones de casas, porque este reposito
 
 ## El negocio
 
-_Escribe aquí cómo se llama, a qué se dedica, dónde está y desde cuándo atiende._
+Concesionario Trinidad es un concesionario de vehículos (autos nuevos y usados) ubicado en la ciudad de Trinidad, Beni, Bolivia. Atiende a sus clientes desde hace varios años con venta de autos, accesorios y servicio posventa.
 
 ## El permiso
 
-_Escribe aquí si el dueño ya te dio permiso para hacer su sitio y para usar sus fotos y su logo (sin su nombre)._
+El dueño del negocio ya nos dio permiso para crear su sitio web y para usar sus fotos y su logo, sin mencionar su nombre personal.
 
 ## Objetivo del sitio
 
-_Escribe aquí qué tiene que lograr el sitio: más pedidos por WhatsApp, más reservas, que lo encuentren en Google…_
+El sitio debe lograr que más personas conozcan el concesionario, que envíen consultas por WhatsApp sobre los autos disponibles y que el negocio aparezca en Google cuando alguien busque concesionario en Trinidad.
 
 ## Público
 
-_Escribe aquí quiénes van a visitar el sitio: edad, qué buscan y si entran más desde el celular o la computadora._
+Los visitantes serán personas adultas jóvenes y familias de Trinidad que buscan comprar un vehículo nuevo o usado a buen precio. Entran principalmente desde el celular.
 
 ## Páginas
 
-_Escribe aquí las 4 páginas que tendrá el sitio y qué va en cada una (por ejemplo Inicio, Productos, Nosotros y Contacto)._
+El sitio tendrá 4 páginas: Inicio (presentación y vehículos destacados), Vehículos (catálogo con fotos y precios), Nosotros (quiénes somos y años de atención) y Contacto (WhatsApp, teléfono, horarios y mapa).
 
 ## Contenido que ya tienes
 
-_Escribe aquí qué fotos, logo, textos, precios u horarios te dio el negocio y qué falta conseguir._
+Tenemos el logo del negocio, fotos del showroom y de algunos vehículos, la lista de precios de los autos y los horarios de atención. Falta conseguir fotos profesionales de todos los vehículos y los textos de la historia del negocio.
 
 ## Estilo visual
 
-_Escribe aquí los colores de la marca con su código (por ejemplo #1E3A8A), la tipografía y dos sitios de referencia que te gusten y por qué._
+Los colores de la marca son rojo (#C1272D) y blanco (#FFFFFF), con gris oscuro para los textos (#333333). La tipografía será Arial o Helvetica, clara y fácil de leer. Dos sitios de referencia: autocosmos.com por la organización del catálogo y toyota.com.bo por la presentación limpia de los vehículos.
 
 ## Boceto
 
-_Escribe aquí cómo se reparte la página de inicio (qué va arriba, en el medio y abajo) y el nombre del archivo de tu boceto en la carpeta `boceto`._
+La página de inicio tiene arriba la cabecera con el logo y el menú; en el medio una presentación con una foto grande de un vehículo y debajo tarjetas con vehículos destacados; abajo el pie con horarios, teléfono y enlace a WhatsApp. El boceto está en la carpeta `boceto` con el nombre `boceto.svg`.
