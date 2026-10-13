@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets';
+import logoTrinidad from '../assets/logo-trinidad.png';
+import showroom from '../assets/showroom.png';
+// Página «Nosotros»: historia, servicios y por qué elegirnos.
+// Provisional: la historia del negocio se completa con los datos reales del dueño.
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Nosotros | Concesionario Trinidad</title>
+	</head>
+	<body>
+		<header>
+			<a href="/">
+				<Image src={logoTrinidad} alt="Logotipo de Concesionario Trinidad" width={160} />
+				Concesionario Trinidad
+			</a>
+			<nav aria-label="Principal">
+				<ul>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="/vehiculos">Vehículos</a></li>
+					<li><a href="/nosotros" aria-current="page">Nosotros</a></li>
+					<li><a href="/contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h1>Quiénes somos</h1>
+				<p>
+					Concesionario Trinidad es un negocio familiar de la ciudad de Trinidad, Beni, dedicado a la
+					venta de vehículos nuevos y usados. Atendemos a las familias y a los trabajadores de la
+					ciudad desde hace varios años, con la meta de que cada cliente se vaya contento con su auto
+					y con la atención que recibió.
+				</p>
+				<Image
+					src={showroom}
+					alt="Fachada iluminada del concesionario con vehículos en exhibición al atardecer"
+					width={640}
+				/>
+			</section>
+
+			<section>
+				<h2>Lo que hacemos</h2>
+				<p>En el concesionario ofrecemos varios servicios pensados para el conductor de Trinidad:</p>
+				<ul>
+					<li>Venta de vehículos nuevos y usados.</li>
+					<li>Accesorios y repuestos para tu auto.</li>
+					<li>Servicio posventa y asesoría después de la compra.</li>
+					<li>Apoyo con la documentación de la transferencia.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Por qué comprarnos</h2>
+				<p>
+					Te mostramos cada vehículo como es, sin sorpresas. Nos tomamos el tiempo de explicarte el
+					estado del auto, el kilometraje y las formas de pago, y te acompañamos hasta que tengas las
+					llaves en la mano. Puedes visitarnos en el showroom o escribirnos por teléfono y WhatsApp.
+				</p>
+			</section>
+		</main>
+
+		<footer>
+			<address>
+				Av. Principal, Trinidad, Beni, Bolivia<br />
+				<a href="tel:+59170000000">Llamar al 700 00000</a>
+			</address>
+		</footer>
+	</body>
+</html>

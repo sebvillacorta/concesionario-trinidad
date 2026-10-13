@@ -1,0 +1,103 @@
+---
+import { Image } from 'astro:assets';
+import logoTrinidad from '../assets/logo-trinidad.png';
+import sedanRojo from '../assets/sedan-rojo.png';
+// Catálogo de vehículos y precios.
+// Provisional: reemplaza los vehículos, los años y los precios por los del negocio.
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Vehículos | Concesionario Trinidad</title>
+	</head>
+	<body>
+		<header>
+			<a href="/">
+				<Image src={logoTrinidad} alt="Logotipo de Concesionario Trinidad" width={160} />
+				Concesionario Trinidad
+			</a>
+			<nav aria-label="Principal">
+				<ul>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="/vehiculos" aria-current="page">Vehículos</a></li>
+					<li><a href="/nosotros">Nosotros</a></li>
+					<li><a href="/contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h1>Vehículos disponibles</h1>
+				<p>
+					Este es el catálogo de vehículos que tenemos en el concesionario. Todos pasan por una
+					revisión antes de salir a la venta y puedes verlos en persona en nuestro showroom de
+					Trinidad, Beni. Si te interesa alguno, escríbenos y te enviamos más fotos y detalles.
+				</p>
+				<Image
+					src={sedanRojo}
+					alt="Sedán rojo en exhibición dentro del concesionario Trinidad"
+					width={320}
+				/>
+			</section>
+
+			<section>
+				<h2>Catálogo y precios</h2>
+				<p>Precios referenciales. Consulta por WhatsApp el precio actualizado de cada vehículo.</p>
+				<table>
+					<caption>Precios de los vehículos en venta</caption>
+					<thead>
+						<tr>
+							<th scope="col">Vehículo</th>
+							<th scope="col">Año</th>
+							<th scope="col">Precio</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Auto sedán familiar</td>
+							<td>2020</td>
+							<td>Bs 00.000</td>
+						</tr>
+						<tr>
+							<td>Camioneta 4x4 cabina doble</td>
+							<td>2018</td>
+							<td>Bs 00.000</td>
+						</tr>
+						<tr>
+							<td>Auto compacto</td>
+							<td>2021</td>
+							<td>Bs 00.000</td>
+						</tr>
+						<tr>
+							<td>Minivan familiar</td>
+							<td>2019</td>
+							<td>Bs 00.000</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2>¿Buscas otro vehículo?</h2>
+				<p>
+					Si no ves aquí el auto que quieres, cuéntanos qué buscas y cuánto piensas invertir.
+					Revisamos nuestro stock y te avisamos cuando llegue algo que encaje contigo.
+				</p>
+				<p><a href="https://wa.me/59170000000">Pide más información por WhatsApp</a></p>
+			</section>
+		</main>
+
+		<footer>
+			<address>
+				Av. Principal, Trinidad, Beni, Bolivia<br />
+				<a href="tel:+59170000000">Llamar al 700 00000</a>
+			</address>
+		</footer>
+	</body>
+</html>

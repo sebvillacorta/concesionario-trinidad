@@ -1,0 +1,95 @@
+---
+import { Image } from 'astro:assets';
+import logoTrinidad from '../assets/logo-trinidad.png';
+// Página «Contacto»: WhatsApp, teléfono, horarios y mapa.
+// Provisional: cambia la dirección, el teléfono y los horarios por los reales.
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Contacto | Concesionario Trinidad</title>
+	</head>
+	<body>
+		<header>
+			<a href="/">
+				<Image src={logoTrinidad} alt="Logotipo de Concesionario Trinidad" width={160} />
+				Concesionario Trinidad
+			</a>
+			<nav aria-label="Principal">
+				<ul>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="/vehiculos">Vehículos</a></li>
+					<li><a href="/nosotros">Nosotros</a></li>
+					<li><a href="/contacto" aria-current="page">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h1>Contacto</h1>
+				<p>
+					¿Te interesa un vehículo o quieres visitarnos? Escríbenos por WhatsApp y te respondemos con
+					fotos, precios y disponibilidad. También puedes llamarnos o venir directamente al showroom
+					en Trinidad, Beni, en el horario de atención.
+				</p>
+				<p><a href="https://wa.me/59170000000">Escríbenos por WhatsApp</a></p>
+			</section>
+
+			<section>
+				<h2>Horario de atención</h2>
+				<table>
+					<caption>Horario de atención al público</caption>
+					<thead>
+						<tr>
+							<th scope="col">Día</th>
+							<th scope="col">Horario</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Lunes a viernes</td>
+							<td>8:00 a 12:00 y 15:00 a 19:00</td>
+						</tr>
+						<tr>
+							<td>Sábado</td>
+							<td>8:00 a 13:00</td>
+						</tr>
+						<tr>
+							<td>Domingo</td>
+							<td>Cerrado</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2>Dónde estamos</h2>
+				<p>Nos encontramos en la ciudad de Trinidad, departamento de Beni, Bolivia.</p>
+				<address>
+					Av. Principal, Trinidad, Beni, Bolivia<br />
+					<a href="tel:+59170000000">Llamar al 700 00000</a>
+				</address>
+				<iframe
+					title="Mapa del Concesionario Trinidad en la ciudad de Trinidad, Beni"
+					src="https://www.google.com/maps?q=Trinidad,+Beni,+Bolivia&output=embed"
+					width="600"
+					height="450"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+		</main>
+
+		<footer>
+			<address>
+				Av. Principal, Trinidad, Beni, Bolivia<br />
+				<a href="tel:+59170000000">Llamar al 700 00000</a>
+			</address>
+		</footer>
+	</body>
+</html>

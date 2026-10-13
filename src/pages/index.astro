@@ -1,6 +1,10 @@
 ---
-// Página de inicio. Cambia «Nombre de tu negocio» por el nombre real del negocio
-// en el título de la pestaña y en el encabezado principal.
+import { Image } from 'astro:assets';
+import logoTrinidad from '../assets/logo-trinidad.png';
+import showroom from '../assets/showroom.png';
+import sedanRojo from '../assets/sedan-rojo.png';
+// Página de inicio de Concesionario Trinidad.
+// Provisional: cambia «700 00000» y la dirección por los datos reales del negocio.
 ---
 
 <html lang="es">
@@ -10,10 +14,81 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Concesionario Trinidad</title>
+		<title>Concesionario Trinidad | Autos nuevos y usados en Trinidad, Beni</title>
 	</head>
 	<body>
-		<h1>Concesionario Trinidad</h1>
-		<p>Aquí empieza el sitio web del negocio. Lo iremos construyendo semana a semana.</p>
+		<header>
+			<a href="/">
+				<Image src={logoTrinidad} alt="Logotipo de Concesionario Trinidad" width={160} />
+				Concesionario Trinidad
+			</a>
+			<nav aria-label="Principal">
+				<ul>
+					<li><a href="/" aria-current="page">Inicio</a></li>
+					<li><a href="/vehiculos">Vehículos</a></li>
+					<li><a href="/nosotros">Nosotros</a></li>
+					<li><a href="/contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h1>Concesionario Trinidad</h1>
+				<p>
+					Somos el concesionario de autos nuevos y usados de Trinidad, Beni. En nuestro showroom
+					encontrarás vehículos de distintas marcas y modelos, accesorios para tu auto y un servicio
+					posventa que te acompaña después de la compra. Ven a conocerlos y llévate el auto que buscas.
+				</p>
+				<p><a href="https://wa.me/59170000000">Consulta los vehículos disponibles por WhatsApp</a></p>
+			</section>
+
+			<section>
+				<h2>Nuestro showroom</h2>
+				<p>
+					Te esperamos en un espacio cómodo donde puedes ver y probar los vehículos con calma, con la
+					asesoría de nuestro equipo en todo momento.
+				</p>
+				<Image
+					src={showroom}
+					alt="Fachada iluminada del concesionario con vehículos en exhibición al atardecer"
+					width={640}
+				/>
+			</section>
+
+			<section>
+				<h2>Vehículos destacados</h2>
+				<p>
+					Esta semana tenemos seleccionados algunos vehículos en el showroom. Escríbenos por WhatsApp
+					para ver más fotos y conocer el año y el precio actualizado de cada uno.
+				</p>
+				<Image
+					src={sedanRojo}
+					alt="Sedán rojo en exhibición dentro del concesionario Trinidad"
+					width={320}
+				/>
+				<ul>
+					<li>Auto sedán familiar, cómodo para la ciudad y para viajar.</li>
+					<li>Camioneta 4x4 cabina doble, para el trabajo y el camino.</li>
+					<li>Auto compacto, económico y fácil de estacionar.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Compra fácil y segura</h2>
+				<p>
+					Te mostramos el estado real de cada vehículo, te explicamos las formas de pago y te ayudamos
+					con la documentación de la transferencia. Atendemos en nuestro local de Trinidad y también
+					respondemos tus consultas por teléfono y por WhatsApp.
+				</p>
+			</section>
+		</main>
+
+		<footer>
+			<address>
+				Av. Principal, Trinidad, Beni, Bolivia<br />
+				<a href="tel:+59170000000">Llamar al 700 00000</a>
+			</address>
+		</footer>
 	</body>
 </html>
