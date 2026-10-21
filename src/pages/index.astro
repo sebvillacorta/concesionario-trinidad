@@ -19,23 +19,27 @@ import sedanRojo from '../assets/sedan-rojo.png';
 	</head>
 	<body class="bg-blanco font-texto leading-relaxed text-gris antialiased">
 		<header class="bg-rojo px-6 py-4">
-			<a href="/" class="font-titulo text-2xl font-semibold text-blanco">
-				<Image
-					src={logoTrinidad}
-					alt="Logotipo de Concesionario Trinidad"
-					width={160}
-					class="mr-3 inline-block h-10 w-auto align-middle"
-				/>
-				Concesionario Trinidad
-			</a>
-			<nav aria-label="Principal">
-				<ul class="mt-4 flex flex-wrap gap-x-6 gap-y-2">
-					<li><a href="/" aria-current="page" class="font-semibold text-blanco underline">Inicio</a></li>
-					<li><a href="/vehiculos" class="text-blanco hover:text-rojo-claro">Vehículos</a></li>
-					<li><a href="/nosotros" class="text-blanco hover:text-rojo-claro">Nosotros</a></li>
-					<li><a href="/contacto" class="text-blanco hover:text-rojo-claro">Contacto</a></li>
-				</ul>
-			</nav>
+			<div class="flex flex-wrap items-center justify-between gap-4">
+				<a href="/" class="font-titulo text-2xl font-semibold text-blanco">
+					<Image
+						src={logoTrinidad}
+						alt="Logotipo de Concesionario Trinidad"
+						width={160}
+						class="mr-3 inline-block h-10 w-auto align-middle"
+					/>
+					Concesionario Trinidad
+				</a>
+				<nav aria-label="Principal">
+					<ul class="flex flex-wrap gap-x-6 gap-y-2">
+						<li>
+							<a href="/" aria-current="page" class="font-semibold text-blanco underline">Inicio</a>
+						</li>
+						<li><a href="/vehiculos" class="text-blanco hover:text-rojo-claro">Vehículos</a></li>
+						<li><a href="/nosotros" class="text-blanco hover:text-rojo-claro">Nosotros</a></li>
+						<li><a href="/contacto" class="text-blanco hover:text-rojo-claro">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
 		<main class="mx-auto max-w-3xl space-y-10 px-6 py-10">
