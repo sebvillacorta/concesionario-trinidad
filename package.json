@@ -14,7 +14,9 @@
     "revisar": "node revisor/revisar.mjs"
   },
   "dependencies": {
-    "astro": "^7.3.5"
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.5",
+    "tailwindcss": "^4.3.3"
   },
   "allowScripts": {
     "esbuild": true

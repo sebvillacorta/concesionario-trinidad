@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/*
+	La marca de Concesionario Trinidad, en un solo lugar.
+	Todo lo que se ve en el sitio sale de aquí: los colores con clases como
+	bg-rojo o text-gris, y las fuentes con clases como font-titulo.
+	Los tres colores y la tipografía son los del brief (BRIEF.md).
+*/
+@theme {
+	/* Los colores de la marca */
+	--color-rojo: #c1272d;
+	--color-blanco: #ffffff;
+	--color-gris: #333333;
+
+	/* Tonos de apoyo, derivados de los mismos colores de la marca */
+	--color-rojo-oscuro: #9e1f24;
+	--color-rojo-claro: #f7e6e7;
+	--color-gris-claro: #f2f2f2;
+	--color-gris-medio: #6b6b6b;
+
+	/*
+		Las fuentes del brief: Arial o Helvetica, claras y fáciles de leer.
+		Las dos guardan la misma familia; los títulos se distinguen con el
+		grosor (font-bold) y el tamaño, no con otra tipografía.
+	*/
+	--font-titulo: Arial, Helvetica, sans-serif;
+	--font-texto: Arial, Helvetica, sans-serif;
+}
